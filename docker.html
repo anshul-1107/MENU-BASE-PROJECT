@@ -50,13 +50,13 @@
     <div class="container">
         <h1>Docker Management</h1>
 
-        <form id="dockerImgPullForm" action="http://127.0.0.1:5000/docker_image_pull" method="post">
+        <form id="dockerImgPullForm" action="http://127.0.0.1:5001/docker_image_pull" method="post">
             <label for="image">Docker Image:</label>
             <input type="text" id="image" name="image" required>
             <input type="submit" value="Pull Docker Image">
         </form>
 
-        <form id="dockerLaunchForm" action="http://127.0.0.1:5000/launch_docker" method="post">
+        <form id="dockerLaunchForm" action="http://127.0.0.1:5001/launch_docker" method="post">
             <label for="container_name">Container Name:</label>
             <input type="text" id="container_name" name="container_name" required>
             <label for="image">Docker Image:</label>
@@ -64,38 +64,38 @@
             <input type="submit" value="Launch Docker Container">
         </form>
 
-        <form id="dockerStopForm" action="http://127.0.0.1:5000/docker_stop" method="post">
+        <form id="dockerStopForm" action="http://127.0.0.1:5001/docker_stop" method="post">
             <label for="container_name">Container Name:</label>
             <input type="text" id="container_name" name="container_name" required>
             <input type="submit" value="Stop Docker Container">
         </form>
 
-        <form id="dockerStartForm" action="http://127.0.0.1:5000/docker_start" method="post">
+        <form id="dockerStartForm" action="http://127.0.0.1:5001/docker_start" method="post">
             <label for="container_name">Container Name:</label>
             <input type="text" id="container_name" name="container_name" required>
             <input type="submit" value="Start Docker Container">
         </form>
 
-        <form id="dockerStatusForm" action="http://127.0.0.1:5000/docker_status" method="post">
+        <form id="dockerStatusForm" action="http://127.0.0.1:5001/docker_status" method="post">
             <label for="container_name">Container Name:</label>
             <input type="text" id="container_name" name="container_name" required>
             <input type="submit" value="Get Docker Container Status">
         </form>
 
-        <form id="dockerRemoveForm" action="http://127.0.0.1:5000/docker_remove" method="post">
+        <form id="dockerRemoveForm" action="http://127.0.0.1:5001/docker_remove" method="post">
             <label for="container_name">Container Name:</label>
             <input type="text" id="container_name" name="container_name" required>
             <input type="submit" value="Remove Docker Container">
         </form>
 
-        <form id="dockerLogsForm" action="http://127.0.0.1:5000/docker_logs" method="post">
+        <form id="dockerLogsForm" action="http://127.0.0.1:5001/docker_logs" method="post">
             <label for="container_name">Container Name:</label>
             <input type="text" id="container_name" name="container_name" required>
             <input type="submit" value="Get Docker Container Logs">
         </form>
 
 
-        <form id="dockerImgRemoveForm" action="http://127.0.0.1:5000/docker_image_remove" method="post">
+        <form id="dockerImgRemoveForm" action="http://127.0.0.1:5001/docker_image_remove" method="post">
             <label for="image">Docker Image:</label>
             <input type="text" id="image" name="image" required>
             <input type="submit" value="Remove Docker Image">
